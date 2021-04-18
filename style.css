@@ -5,6 +5,7 @@
     list-style-type: none;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
     
 }
 body {
@@ -56,6 +57,7 @@ header{
 
 .content-wrapper{
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .background-image{
@@ -267,6 +269,7 @@ footer{
         .image-suit, .image-wallet {
             width: 350px;
         height: 350px;
+        margin: 0;
         }
     }
     @media(max-width: 530px){
@@ -284,8 +287,13 @@ footer{
             top: 50%
         }
 
-    @media(max-width: 300px){
+    @media(max-width: 432px){
         .description{
             width: 200px;
         }
-            }
+        .description h3 {
+            font-size: 40px;
+            
+        }
+    }
+}
