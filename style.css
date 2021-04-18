@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap');
 *{
     margin: 0;
     padding: 0;
     list-style-type: none;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
 }
 body {
     background-color: rgb(59, 59, 59);
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -17,6 +19,7 @@ header{
     color: black;
     display: flex;
     position: fixed;
+    z-index: 100;
 }
 .logo-container {
     width: 60%;
@@ -102,7 +105,103 @@ header{
     padding-top: 50px;
     font-style: italic;
 }
+/* About Us */
 
+.content-about-us {
+    width: 100%;
+    height: 170vh;
+    display: flex;
+    position: relative;
+}
+.left {
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+}
+.right {
+    width: 70%;
+    height: 100%;
+    background-color: #fbb544;
+}
+.top {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+}
+.image-suit {
+    background-image: url("img/pexels-chloe-1043474.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    margin-right: 100px;
+    border-radius: 50%;
+}
+.description {
+    width: 500px;
+    height: 300px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+}
+.description h3 {
+    font-size: 64px;
+    font-weight: bold;
+    margin: 15px 0px;
+}
+.description p {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    line-height: 20px;
+}
+.description button {
+    margin-top: 30px;
+    padding: 15px 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    transition: all 0.4s;
+}
+.description button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    
+}
+.image-wallet {
+    background-image: url("img/pexels-wallet.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    margin-right: 100px;
+    border-radius: 50%;
+}
+
+
+/* Footer */
 footer{
     width: 100%;
     height: 10vh;
@@ -139,4 +238,33 @@ footer{
     .yellow-background{
         height: 120vh;
     }
+
 }
+@media(max-width: 1200px){
+    .image-suit, .image-wallet {
+        width: 300px;
+    height: 300px;
+    }
+    .description {
+        margin-right: 0px; 
+    }
+}
+@media(max-width: 950px){
+        .top, .bottom {
+            flex-direction: column;
+            height: 150vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .bottom {
+            padding-left: 0px;
+            flex-direction: column-reverse;
+        }
+        .content-about-us {
+            height: 250vh;
+        }
+        .image-suit, .image-wallet {
+            width: 350px;
+        height: 350px;
+        }
+    }
