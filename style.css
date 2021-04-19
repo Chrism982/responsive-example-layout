@@ -448,10 +448,10 @@ footer{
             }
             .contact-bottom {
             height: 120vh;
-        }
-        .menu-container {
-            width: 60%;
-        }
+            }
+            .menu-container {
+                width: 60%;
+            }
     }
     @media(max-width: 432px){
         .description{
@@ -465,5 +465,8 @@ footer{
             bottom:383px;
             width: 420px;
         }
+        .contact-bottom {
+            height: 150vh;
+            }
         }
 }
