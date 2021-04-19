@@ -463,7 +463,7 @@ footer{
         .image-contact {
             left: 0%;
             bottom:383px;
-            width: 420px;
+            width: auto;
         }
         .contact-bottom {
             height: 150vh;
