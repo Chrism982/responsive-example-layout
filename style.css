@@ -360,10 +360,11 @@ footer{
     .contact-bottom{
         height: 100vh;
     }
-    .content-description {
-        margin-top: 0px!important;
-        margin-left: 10px!important;
-        position: relative!important;
+    .contact-description {
+        margin-top: 50px;
+        margin-left: 50px;
+        
+        
     }
 }
 
@@ -417,7 +418,7 @@ footer{
             top: 50%;
         }
         .image-contact {
-            left: 5%;
+            left: 6%;
             width: 450px;
             height: 450px;
             background-repeat: no-repeat;
@@ -426,14 +427,40 @@ footer{
         .contact-form {
             margin-left: 0%;
         }
+        .contact-description {
+            margin-top: 50px;
+            margin-left: 15px;
+        }
 
+        @media(max-width: 485px){
+            .image-contact {
+                left: 3%;
+                width: 400px;
+                height: 400px;
+                bottom:380px;
+                
+            }
+            .contact-description {
+                margin-left:0px;
+            }
+            .contact-description p {
+            width: auto;
+            }
+            .contact-bottom {
+            height: 80vh;
+        }
     @media(max-width: 432px){
         .description{
             width: 200px;
         }
         .description h3 {
             font-size: 40px;
-            
         }
-    }
+        .image-contact {
+            left: 0%;
+            bottom:383px;
+            width: 420px;
+        }
+        }
+}
 }
