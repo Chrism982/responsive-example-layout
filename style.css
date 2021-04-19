@@ -435,7 +435,7 @@ footer{
         @media(max-width: 485px){
             .image-contact {
                 left: 3%;
-                width: 400px;
+                width: 375px;
                 height: 400px;
                 bottom:380px;
                 
@@ -447,8 +447,12 @@ footer{
             width: auto;
             }
             .contact-bottom {
-            height: 80vh;
+            height: 120vh;
         }
+        .menu-container {
+            width: 60%;
+        }
+    }
     @media(max-width: 432px){
         .description{
             width: 200px;
@@ -462,5 +466,4 @@ footer{
             width: 420px;
         }
         }
-}
 }
