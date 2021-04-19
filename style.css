@@ -469,4 +469,9 @@ footer{
             height: 150vh;
             }
         }
+        @media(max-width: 370px){
+            .image-contact {
+            width: 350px;
+        }
+        }
 }
