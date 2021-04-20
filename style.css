@@ -471,7 +471,7 @@ footer{
         }
         @media(max-width: 370px){
             .image-contact {
-            width: 350px;
+            width: 100vw;
         }
         }
 }
